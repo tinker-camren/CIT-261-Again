@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="Content/scrolling-nav.css" rel="stylesheet">
+    <link href="Content/Site.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body id="page-top" onload="onLoadExample()">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example1.html">Example1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example2.html">Example2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example3.html">Example3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example4.html">Example4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example5.html">Example5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example6.html">Example6</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-primary text-white">
+        <div class="container text-center">
+            <h1>Example4</h1>
+            <p class="lead">This example showcases the following code topics:</p>
+            <ul class="custom-header">
+                <li>9. Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events.</li>
+                <li>11. Designing, Defining, and Triggering CSS3 Transitions without Custom Libraries (Thought Library).</li>
+                <li>12. Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries (Thought Library).</li>
+                <li>13. Designing, Defining, and Triggering CSS3 Animations without Custom Libraries (Thought Library).</li>
+            </ul>
+        </div>
+    </header>
+    <section id="topic1" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>JavaScript Events</h2>
+                    <button onclick="hideShow('JavaScriptEventsExample')" class="btn-info row mx-auto">Click For Example</button>
+                    <div id="JavaScriptEventsExample" style="display:none" class="row mx-auto mt-2 text-center justify-content-center">
+
+                        <button onclick="hideShow('OnTouchExample'), onTouchExample()" class="btn-info mx-auto">OnTouch Example</button>
+                        <div id="OnTouchExample" style="display:none" class="mx-auto mt-3">
+                            <!-- This will change when the div is touched and when the finger moves across it -->
+                            <div id="OnTouchExampleDiv" class="row mx-auto mt-3 btn JsCssExampleDiv">Drag your finger on this box and let go!</div>
+
+                        </div>
+                        <button onclick="hideShow('OnLoadExample')" class="btn-info mx-auto">OnLoad Example</button>
+                        <div id="OnLoadExample" style="display:none" class="mx-auto mt-3">
+                            <!-- This will input a paragraph talking about the onload example -->
+                        </div>
+                        <button onclick="hideShow('AnimationEventExample'); animationEventExample()" class="btn-info mx-auto">Animation Event Example</button>
+                        <div id="AnimationEventExample" style="display:none" class="mx-auto mt-3">
+                            <p>An alert will pop up once you trigger an animation event in the OnTouch Example section now that you've clicked the magic button.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic1');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic1" style="display:none">
+                <p class="text-body">
+                    Javascript events are quite fun! There are an insane amount of events available out there for just about anything you can think of. Many of these events can be added
+                    to the HTML portion of the code, such as 'onload' and 'onclick'. Some require an event listener to be added using JavaScript though, such as with the touch events.
+                    You can use any of these events to triger some JavaScript code, so it's especially useful in building dynamic user interfaces on a website.
+                </p>
+                <p class="text-body">
+
+                </p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/jsref/obj_touchevent.asp">https://www.w3schools.com/jsref/obj_touchevent.asp</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events">https://developer.mozilla.org/en-US/docs/Web/API/Touch_events</a></li>
+                    <li><a href="https://www.w3schools.com/jsref/event_onload.asp">https://www.w3schools.com/jsref/event_onload.asp</a></li>
+                    <li><a href="https://www.w3schools.com/jsref/obj_animationevent.asp">https://www.w3schools.com/jsref/obj_animationevent.asp</a></li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example4.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example4.js</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="topic2" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>CSS3 Transitions</h2>
+                    <button onclick="hideShow('CSSTransitionsExample')" class="btn-info row mx-auto">Click For Example</button>
+                    <div id="CSSTransitionsExample" style="display:none" class="row mx-auto mt-2 text-center justify-content-center">
+
+                    </div>
+                </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic2');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic2" style="display:none">
+                <p class="text-body">
+                    CSS3 Transitions are pretty simple. They also provide a lot of flair for the user interface, especially if you're doing a dynamic interface
+                    or have lots of objects or items on your page. Transitions make changes to the DOM much smoother, which provides a better user experience. 
+                </p>
+                <p class="text-body">
+
+                </p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/css/css3_transitions.asp">https://www.w3schools.com/css/css3_transitions.asp</a></li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example4.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example4.js</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="topic3" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>CSS3 Animations</h2>
+                    <button onclick="hideShow('CSSAnimationsExample')" class="btn-info row mx-auto">Click For Example</button>
+                    <div id="CSSAnimationsExample" style="display:none" class="row mx-auto mt-2 text-center justify-content-center">
+
+                    </div>
+                </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic3');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic3" style="display:none">
+                <p class="text-body">
+                    CSS3 Animations are much like transitions. They're good for sprucing up your page, especially if you have a lot of items on your page. 
+                    It also helps when you have dynamic web pages that change a lot without the page reloading. There are many things you can animate on a page,
+                    include pictures. This example is just a basic one showcasing what can be done. 
+                </p>
+                <p class="text-body">
+
+                </p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/css/css3_animations.asp">https://www.w3schools.com/css/css3_animations.asp</a></li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example4.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example4.js</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="topic4" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>CSS3 Transforms</h2>
+                    <button onclick="hideShow('CSSTransformsExample')" class="btn-info row mx-auto">Click For Example</button>
+                    <div id="CSSTransformsExample" style="display:none" class="row mx-auto mt-2 text-center justify-content-center">
+
+                    </div>
+                </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic4');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic4" style="display:none">
+                <p class="text-body">
+                    CSS3 Transforms are much like the other two topics above. You can use them to transform elements on a web page. Transforms allow
+                    you to change the shape and position of element(s) without affecting the rest of the DOM. 
+                </p>
+                <p class="text-body">
+
+                </p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms"></a>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms</li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example4.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example4.js</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Camren Tinker - CIT261</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <script src="Scripts/scrolling-nav.js"></script>
+    <script src="Scripts/example1.js"></script>
+    <script src="Scripts/example2.js"></script>
+    <script src="Scripts/example3.js"></script>
+    <script src="Scripts/example4.js"></script>
+</body>
+</html>
+
